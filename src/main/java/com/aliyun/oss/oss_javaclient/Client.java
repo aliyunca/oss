@@ -1,4 +1,4 @@
-package com.aliyun.oss.nikeshindia.oss_javaclient;
+package com.aliyun.oss.oss_javaclient;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,6 +11,8 @@ import com.aliyun.oss.model.PutObjectResult;
 
 /**
  * Nikesh Gogia - Alibaba Cloud International!
+ * Maintained by Nikesh Gogia n.gogia@alibaba-inc.com 
+ * Code Written By Nikesh Gogia
  * Java Client Code to upload single file on Object Storage Service of Alibaba Cloud
  */
 public class Client 
@@ -19,15 +21,15 @@ public class Client
     {
         System.out.println( "File Uploading on Alibaba Cloud Object Storage Started" );
         
-        String key = "<key>"; // Replace this with your key
+        String key = ""; // Replace this with your key
 
-        String secret = "<secret>"; // Replace this with your secret
+        String secret = ""; // Replace this with your secret
 
-        // Uses Hangzhou as an example
+        // Uses Singapore as an example
         
-        String bucketName = "my-bucket-name"; // Replace this with your bucket 
+        String bucketName = ""; // Replace this with your bucket 
         
-        String filepath = "/picdir/sample.png"; // Replace this with your file path
+        String filepath = "C:\\img\\fami.jpg"; // Replace this with your file path
         
         putObject(bucketName, key, filepath, secret);
         
@@ -40,7 +42,7 @@ public class Client
     	
         // Initializes an OSSClient
     	
-        String endpoint = "http://oss-cn-hangzhou.aliyuncs.com";
+        String endpoint = "http://oss-ap-southeast-1.aliyuncs.com";
         
         
         OSSClient client = new OSSClient(endpoint, key, secret);
