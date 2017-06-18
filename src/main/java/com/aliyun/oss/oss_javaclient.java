@@ -1,4 +1,4 @@
-package com.aliyun.oss.oss_javaclient;
+package com.aliyun.oss;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,7 +15,7 @@ import com.aliyun.oss.model.PutObjectResult;
  * Code Written By Nikesh Gogia
  * Java Client Code to upload single file on Object Storage Service of Alibaba Cloud
  */
-public class Client 
+public class oss_javaclient 
 {
     public static void main( String[] args ) throws FileNotFoundException
     {
